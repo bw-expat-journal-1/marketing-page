@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZ3zwprpvBS1izr_vOMscG6eQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhPuI.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -121,4 +135,146 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Amatic SC', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+header {
+  height: 20vh;
+  margin: 0 2% 8% 2%;
+  position: sticky;
+  border-bottom: 2px dashed #536E44;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .logo img {
+  height: 12vh;
+  margin: 0 20%;
+}
+header h1.title {
+  text-align: center;
+  width: 60vw;
+}
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.loginBox .bgImage {
+  position: relative;
+  width: 100vw;
+  padding-bottom: 7%;
+  margin-bottom: 7%;
+  border-bottom: 2px dashed #536E44;
+}
+.loginBox .container {
+  width: 45vw;
+  position: absolute;
+  border: 2px solid #12191B;
+  margin: 1% 0;
+}
+.loginBox .container form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginBox .container form .label {
+  margin: 5% 0;
+  background-color: #12191B;
+  padding: 2%;
+  color: white;
+  font-size: 1.6rem;
+}
+.loginBox .container form input[type="text"] {
+  width: 90%;
+  margin: 5% 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+  padding: 3%;
+  border: 1px solid #1788C7;
+  border-radius: 5px;
+}
+.loginBox .container form input[type="password"] {
+  width: 90%;
+  margin: 5% 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+  padding: 3%;
+  border: 1px solid #1788C7;
+  border-radius: 5px;
+}
+.loginBox .container form input[type="button"] {
+  width: 90%;
+  margin: 5% 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+  padding: 3%;
+  border: 1px solid #1788C7;
+  border-radius: 5px;
+  background-color: #96B190;
+  border: 1px solid #536E44;
+}
+.loginBox .container .forgot {
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+}
+.loginBox .container .forgot a {
+  color: white;
+  font-size: 1.6rem;
+}
+.loginBox .signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45vw;
+  padding: 3% 0;
+  border: 2px solid #12191B;
+  font-size: 1.6rem;
+}
+footer {
+  width: 100%;
+  padding: 3% 0;
+  margin: 7% 0 3% 0;
+  border-top: 2px dashed #536E44;
+}
+footer nav {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer nav a {
+  padding: 2% 0;
+  color: #12191B;
+  text-decoration: none;
+}
+footer nav a:hover {
+  color: #1788C7;
 }

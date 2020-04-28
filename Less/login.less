@@ -1,0 +1,98 @@
+header{
+    height : 20vh;
+    margin: 0 2% 8% 2%;
+    position : sticky;
+    border-bottom: 2px dashed @colorThree;
+    .flexin(row, center, space-evenly);
+    .logo{
+        img{
+           height:12vh; 
+           margin: 0 20%;
+        }
+    }
+    h1.title{
+        text-align: center;
+        width : 60vw;
+    }
+}
+
+
+
+.loginBox{
+    
+    .flexin(column, center, flex-start);
+    .bgImage{
+        position: relative;
+        width : 100vw;
+        padding-bottom: 7%;
+        margin-bottom: 7%;
+        border-bottom: 2px dashed @colorThree;
+    }
+    .container{
+        width: 45vw;
+        position : absolute;
+        border: 2px solid @colorOne;
+        margin: 1% 0;
+        form{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .flexin(column, center, center);
+            .label{
+                margin: 5% 0;
+                background-color: @colorOne;
+                padding: 2%;
+                color:white;
+                font-size: 1.6rem;
+            }
+            input[type = "text"]{
+                .inputStyle();
+            }
+            input[type = "password"]{
+                .inputStyle();
+            }
+            input[type = "button"]{
+                .inputStyle();
+                background-color: @colorTwo;
+                border: 1px solid @colorThree;
+            }
+        }
+        .forgot{
+            width: 100%;
+            padding: 5% 0;
+            text-align: center;
+            a{
+                color: white;
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+    .signUp{
+        .flexin(column, center, center);
+        width: 45vw;
+        padding: 3% 0;
+        border: 2px solid @colorOne;
+        font-size: 1.6rem;
+    }
+    
+}
+footer{
+    width:100%;
+    padding: 3% 0;
+    margin: 7% 0 3% 0;
+    border-top: 2px dashed @colorThree;
+    nav{
+        font-size: 1.6rem;
+        .flexin(column, center, space-evenly);
+        a{
+            padding: 2% 0;
+          color: @colorOne;
+          text-decoration: none;
+          &:hover{
+              color: @colorFive;
+          }  
+        }
+        
+    }
+}
