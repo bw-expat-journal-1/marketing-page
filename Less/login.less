@@ -1,7 +1,9 @@
 header{
     height : 20vh;
     margin: 0 2% 8% 2%;
+    position: -webkit-sticky;
     position : sticky;
+    top: 0;
     border-bottom: 2px dashed @colorThree;
     .flexin(row, center, space-evenly);
     .logo{
@@ -23,16 +25,17 @@ header{
     .flexin(column, center, flex-start);
     .bgImage{
         position: relative;
-        width : 100vw;
+        width: 100vw;
+        height: 67vh;
         padding-bottom: 7%;
         margin-bottom: 7%;
         border-bottom: 2px dashed @colorThree;
     }
     .container{
-        width: 45vw;
+        width: 80vw;
         position : absolute;
         border: 2px solid @colorOne;
-        margin: 1% 0;
+        margin: 6vh 0;
         form{
             position: relative;
             width: 100%;
@@ -70,7 +73,7 @@ header{
     }
     .signUp{
         .flexin(column, center, center);
-        width: 45vw;
+        width: 80vw;
         padding: 3% 0;
         border: 2px solid @colorOne;
         font-size: 1.6rem;
@@ -91,6 +94,7 @@ footer{
           text-decoration: none;
           &:hover{
               color: @colorFive;
+              border-bottom: 1px solid @colorOne;
           }  
         }
         
