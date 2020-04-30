@@ -1,46 +1,55 @@
-header{
-    height : 20vh;
-    margin: 0 2% 8% 2%;
-    position: -webkit-sticky;
-    position : sticky;
-    top: 0;
-    border-bottom: 2px dashed @colorThree;
-    .flexin(row, center, space-evenly);
-    .logo{
-        img{
-           height:12vh; 
-           margin: 0 20%;
-        }
-    }
-    h1.title{
+.message{
+    display: none;
+    @media @tablet{
+        display: block;
         text-align: center;
-        width : 60vw;
+        font-size: 2.4rem;
+        margin-bottom: 4%;
     }
 }
-
-
-
 .loginBox{
     
     .flexin(column, center, flex-start);
     .bgImage{
+        display: block;
+        text-align: center;
         position: relative;
-        width: 100vw;
-        height: 67vh;
+        // width: 100vw;
+        // height: 67vh;
         padding-bottom: 7%;
         margin-bottom: 7%;
         border-bottom: 2px dashed @colorThree;
+        @media @tablet{
+            display: none;
+        }
+
+    }
+    .bgImageDesktop{
+        display:none;
+        @media @tablet{
+            display:block;
+            width:100vw;
+        }
     }
     .container{
         width: 80vw;
         position : absolute;
         border: 2px solid @colorOne;
-        margin: 6vh 0;
+        margin: 2vh 0;
+        @media @tablet{
+            width: 45vw;
+            margin: 10vh 0;
+        }
+        @media @smdesktop{
+            margin: 3vh 0;
+        }
+
         form{
             position: relative;
             width: 100%;
             height: 100%;
             .flexin(column, center, center);
+
             .label{
                 margin: 5% 0;
                 background-color: @colorOne;
@@ -65,7 +74,8 @@ header{
             padding: 5% 0;
             text-align: center;
             a{
-                color: white;
+                background-color: white;
+                color: @colorOne;
                 font-size: 1.6rem;
             }
         }
@@ -77,6 +87,10 @@ header{
         padding: 3% 0;
         border: 2px solid @colorOne;
         font-size: 1.6rem;
+        margin-top: 4%;
+        @media @tablet{
+            width: 45vw;
+        }
     }
     
 }
@@ -88,14 +102,17 @@ footer{
     nav{
         font-size: 1.6rem;
         .flexin(column, center, space-evenly);
+        @media @tablet{
+            .flexin(row, center, space-evenly);
+        }
         a{
             padding: 2% 0;
-          color: @colorOne;
-          text-decoration: none;
-          &:hover{
-              color: @colorFive;
-              border-bottom: 1px solid @colorOne;
-          }  
+            color: @colorOne;
+            text-decoration: none;
+            &:hover{
+                color: @colorFive;
+                border-bottom: 1px solid @colorOne;
+            }  
         }
         
     }

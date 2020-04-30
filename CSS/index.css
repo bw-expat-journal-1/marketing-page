@@ -159,14 +159,16 @@ h1 {
 header {
   height: 20vh;
   margin: 0 2% 8% 2%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   border-bottom: 2px dashed #536E44;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+@media (min-width: 500px) {
+  header {
+    margin: 0 2% 4% 2%;
+  }
 }
 header .logo img {
   height: 12vh;
@@ -176,6 +178,17 @@ header h1.title {
   text-align: center;
   width: 60vw;
 }
+.message {
+  display: none;
+}
+@media (min-width: 500px) {
+  .message {
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 4%;
+  }
+}
 .loginBox {
   display: flex;
   flex-direction: column;
@@ -183,18 +196,43 @@ header h1.title {
   justify-content: flex-start;
 }
 .loginBox .bgImage {
+  display: block;
+  text-align: center;
   position: relative;
-  width: 100vw;
-  height: 67vh;
   padding-bottom: 7%;
   margin-bottom: 7%;
   border-bottom: 2px dashed #536E44;
+}
+@media (min-width: 500px) {
+  .loginBox .bgImage {
+    display: none;
+  }
+}
+.loginBox .bgImageDesktop {
+  display: none;
+}
+@media (min-width: 500px) {
+  .loginBox .bgImageDesktop {
+    display: block;
+    width: 100vw;
+  }
 }
 .loginBox .container {
   width: 80vw;
   position: absolute;
   border: 2px solid #12191B;
-  margin: 6vh 0;
+  margin: 2vh 0;
+}
+@media (min-width: 500px) {
+  .loginBox .container {
+    width: 45vw;
+    margin: 10vh 0;
+  }
+}
+@media (min-width: 900px) {
+  .loginBox .container {
+    margin: 3vh 0;
+  }
 }
 .loginBox .container form {
   position: relative;
@@ -221,6 +259,13 @@ header h1.title {
   border: 1px solid #1788C7;
   border-radius: 5px;
 }
+@media (min-width: 500px) {
+  .loginBox .container form input[type="text"] {
+    width: 75%;
+    margin: 3% 0;
+    padding: 1%;
+  }
+}
 .loginBox .container form input[type="password"] {
   width: 90%;
   margin: 5% 0;
@@ -229,6 +274,13 @@ header h1.title {
   padding: 3%;
   border: 1px solid #1788C7;
   border-radius: 5px;
+}
+@media (min-width: 500px) {
+  .loginBox .container form input[type="password"] {
+    width: 75%;
+    margin: 3% 0;
+    padding: 1%;
+  }
 }
 .loginBox .container form input[type="button"] {
   width: 90%;
@@ -241,13 +293,21 @@ header h1.title {
   background-color: #96B190;
   border: 1px solid #536E44;
 }
+@media (min-width: 500px) {
+  .loginBox .container form input[type="button"] {
+    width: 75%;
+    margin: 3% 0;
+    padding: 1%;
+  }
+}
 .loginBox .container .forgot {
   width: 100%;
   padding: 5% 0;
   text-align: center;
 }
 .loginBox .container .forgot a {
-  color: white;
+  background-color: white;
+  color: #12191B;
   font-size: 1.6rem;
 }
 .loginBox .signUp {
@@ -259,6 +319,12 @@ header h1.title {
   padding: 3% 0;
   border: 2px solid #12191B;
   font-size: 1.6rem;
+  margin-top: 4%;
+}
+@media (min-width: 500px) {
+  .loginBox .signUp {
+    width: 45vw;
+  }
 }
 footer {
   width: 100%;
@@ -272,6 +338,14 @@ footer nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+@media (min-width: 500px) {
+  footer nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 footer nav a {
   padding: 2% 0;
