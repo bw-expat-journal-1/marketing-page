@@ -342,7 +342,6 @@ header h1.title {
 }
 .aboutNav nav a:hover {
   color: #1788C7;
-  border-bottom: 1px solid #12191B;
 }
 img.mobile {
   display: block;
@@ -367,6 +366,7 @@ img.desktop {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5%;
 }
 @media (min-width: 500px) {
   .intro {
@@ -374,13 +374,13 @@ img.desktop {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 2%;
   }
 }
 .intro h2 {
   font-size: 4rem;
   text-align: center;
   padding: 3% 0;
+  padding-bottom: 6%;
 }
 @media (min-width: 500px) {
   .intro h2 {

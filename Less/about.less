@@ -10,7 +10,6 @@
       padding: 0 0 5% 0;
       &:hover{
           color: @colorFive;
-          border-bottom: 1px solid @colorOne;
       }
     }
     
@@ -33,12 +32,13 @@ img.desktop{
 }
 .intro{
     .flexin(column, center, center);
+    padding:5%;
     @media @tablet{
         .flexin(row, center, center);
-        padding: 2%;
     }
     h2{
         .paraHeaderStyle();
+        padding-bottom: 6%;
     }
 }
 .adventure{
