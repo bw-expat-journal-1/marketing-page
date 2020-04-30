@@ -326,6 +326,182 @@ header h1.title {
     width: 45vw;
   }
 }
+.aboutNav nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  font-size: 1.6rem;
+  border-bottom: 2px dashed #536E44;
+}
+.aboutNav nav a {
+  color: #12191B;
+  text-decoration: none;
+  padding: 0 0 5% 0;
+}
+.aboutNav nav a:hover {
+  color: #1788C7;
+  border-bottom: 1px solid #12191B;
+}
+img.mobile {
+  display: block;
+  max-width: 90vw;
+}
+@media (min-width: 500px) {
+  img.mobile {
+    display: none;
+  }
+}
+img.desktop {
+  display: none;
+}
+@media (min-width: 500px) {
+  img.desktop {
+    display: block;
+    max-width: 60vw;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+  }
+}
+.intro h2 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3% 0;
+}
+@media (min-width: 500px) {
+  .intro h2 {
+    max-width: 35vw;
+    padding: 3%;
+  }
+}
+.adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .adventure {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+  }
+}
+.adventure h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3% 0;
+}
+@media (min-width: 500px) {
+  .adventure h3 {
+    max-width: 35vw;
+    padding: 3%;
+  }
+}
+.adventure p {
+  font-size: 2rem;
+  width: 88vw;
+  line-height: 1.8;
+  padding: 3% 0;
+}
+@media (min-width: 500px) {
+  .adventure p {
+    max-width: 35vw;
+    padding: 8%;
+  }
+}
+.virtual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .virtual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+  }
+}
+.virtual h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3% 0;
+}
+@media (min-width: 500px) {
+  .virtual h3 {
+    max-width: 35vw;
+    padding: 3%;
+  }
+}
+.virtual p {
+  font-size: 2rem;
+  width: 88vw;
+  line-height: 1.8;
+  padding: 3% 0;
+}
+@media (min-width: 500px) {
+  .virtual p {
+    max-width: 35vw;
+    padding: 8%;
+  }
+}
+.local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .local {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+  }
+}
+.local h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3% 0;
+}
+@media (min-width: 500px) {
+  .local h3 {
+    max-width: 35vw;
+    padding: 3%;
+  }
+}
+.local p {
+  font-size: 2rem;
+  width: 88vw;
+  line-height: 1.8;
+  padding: 3% 0;
+}
+@media (min-width: 500px) {
+  .local p {
+    max-width: 35vw;
+    padding: 8%;
+  }
+}
 footer {
   width: 100%;
   padding: 3% 0;
@@ -355,91 +531,4 @@ footer nav a {
 footer nav a:hover {
   color: #1788C7;
   border-bottom: 1px solid #12191B;
-}
-.aboutNav nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100vw;
-  font-size: 1.6rem;
-  border-bottom: 2px dashed #536E44;
-}
-.aboutNav nav a {
-  color: #12191B;
-  text-decoration: none;
-  padding: 0 0 5% 0;
-}
-.aboutNav nav a:hover {
-  color: #1788C7;
-  border-bottom: 1px solid #12191B;
-}
-img.mobile {
-  display: block;
-  max-width: 90vw;
-}
-img.desktop {
-  display: none;
-}
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.intro h2 {
-  font-size: 4rem;
-  text-align: center;
-  padding: 3% 0;
-}
-.adventure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.adventure h3 {
-  font-size: 4rem;
-  text-align: center;
-  padding: 3% 0;
-}
-.adventure p {
-  font-size: 2rem;
-  width: 88vw;
-  line-height: 1.8;
-  padding: 3% 0;
-}
-.virtual {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.virtual h3 {
-  font-size: 4rem;
-  text-align: center;
-  padding: 3% 0;
-}
-.virtual p {
-  font-size: 2rem;
-  width: 88vw;
-  line-height: 1.8;
-  padding: 3% 0;
-}
-.local {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.local h3 {
-  font-size: 4rem;
-  text-align: center;
-  padding: 3% 0;
-}
-.local p {
-  font-size: 2rem;
-  width: 88vw;
-  line-height: 1.8;
-  padding: 3% 0;
 }

@@ -20,18 +20,33 @@
 img.mobile{
     display:block;
     max-width: 90vw;
+    @media @tablet{
+        display:none;
+    }
 }
 img.desktop{
     display: none;
+    @media @tablet{
+        display:block;
+        max-width: 60vw;
+    }
 }
 .intro{
     .flexin(column, center, center);
+    @media @tablet{
+        .flexin(row, center, center);
+        padding: 2%;
+    }
     h2{
         .paraHeaderStyle();
     }
 }
 .adventure{
     .flexin(column, center, center);
+    @media @tablet{
+        .flexin(row-reverse, center, space-between);
+        padding: 2%;
+    }
     h3{
         .paraHeaderStyle();
     }
@@ -41,6 +56,10 @@ img.desktop{
 }
 .virtual{
     .flexin(column, center, center);
+    @media @tablet{
+        .flexin(row, center, space-between);
+        padding: 2%;
+    }
     h3{
         .paraHeaderStyle();
     }
@@ -50,6 +69,10 @@ img.desktop{
 }
 .local{
     .flexin(column, center, center);
+    @media @tablet{
+        .flexin(row-reverse, center, space-between);
+        padding: 2%;
+        }
     h3{
         .paraHeaderStyle();
     }
