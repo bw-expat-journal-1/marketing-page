@@ -3,8 +3,9 @@
     @media @tablet{
         display: block;
         text-align: center;
-        font-size: 2.4rem;
+        font-size: 4rem;
         margin-bottom: 4%;
+        font-family: @headerFont;
     }
 }
 .loginBox{
@@ -14,8 +15,6 @@
         display: block;
         text-align: center;
         position: relative;
-        // width: 100vw;
-        // height: 67vh;
         padding-bottom: 7%;
         margin-bottom: 7%;
         border-bottom: 2px dashed @colorThree;
@@ -56,6 +55,9 @@
                 padding: 2%;
                 color:white;
                 font-size: 1.6rem;
+                @media @tablet{
+                    font-size: 2.4rem;
+                }
             }
             input[type = "text"]{
                 .inputStyle();
@@ -77,6 +79,9 @@
                 background-color: white;
                 color: @colorOne;
                 font-size: 1.6rem;
+                @media @tablet{
+                    font-size: 2.4rem;
+                }
             }
         }
 
@@ -90,6 +95,7 @@
         margin-top: 4%;
         @media @tablet{
             width: 45vw;
+            font-size: 2.4rem;
         }
     }
     

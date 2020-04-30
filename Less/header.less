@@ -7,10 +7,17 @@ header{
 
     border-bottom : 2px dashed @colorThree;
     .flexin(row, center, space-evenly);
+    @media @tablet{
+        .flexin(row, center, space-between);
+    }
     .logo{
         img{
            height:12vh; 
            margin: 0 20%;
+           @media @tablet{
+           margin: 0 10vw; 
+           }
+           
         }
     }
     h1.title{

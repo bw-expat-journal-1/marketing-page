@@ -170,9 +170,22 @@ header {
     margin: 0 2% 4% 2%;
   }
 }
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 header .logo img {
   height: 12vh;
   margin: 0 20%;
+}
+@media (min-width: 500px) {
+  header .logo img {
+    margin: 0 10vw;
+  }
 }
 header h1.title {
   text-align: center;
@@ -185,8 +198,9 @@ header h1.title {
   .message {
     display: block;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 4rem;
     margin-bottom: 4%;
+    font-family: 'Amatic SC', cursive;
   }
 }
 .loginBox {
@@ -250,6 +264,11 @@ header h1.title {
   color: white;
   font-size: 1.6rem;
 }
+@media (min-width: 500px) {
+  .loginBox .container form .label {
+    font-size: 2.4rem;
+  }
+}
 .loginBox .container form input[type="text"] {
   width: 90%;
   margin: 5% 0;
@@ -264,6 +283,7 @@ header h1.title {
     width: 75%;
     margin: 3% 0;
     padding: 1%;
+    font-size: 2.4rem;
   }
 }
 .loginBox .container form input[type="password"] {
@@ -280,6 +300,7 @@ header h1.title {
     width: 75%;
     margin: 3% 0;
     padding: 1%;
+    font-size: 2.4rem;
   }
 }
 .loginBox .container form input[type="button"] {
@@ -298,6 +319,7 @@ header h1.title {
     width: 75%;
     margin: 3% 0;
     padding: 1%;
+    font-size: 2.4rem;
   }
 }
 .loginBox .container .forgot {
@@ -309,6 +331,11 @@ header h1.title {
   background-color: white;
   color: #12191B;
   font-size: 1.6rem;
+}
+@media (min-width: 500px) {
+  .loginBox .container .forgot a {
+    font-size: 2.4rem;
+  }
 }
 .loginBox .signUp {
   display: flex;
@@ -324,6 +351,7 @@ header h1.title {
 @media (min-width: 500px) {
   .loginBox .signUp {
     width: 45vw;
+    font-size: 2.4rem;
   }
 }
 .aboutNav nav {
@@ -332,7 +360,7 @@ header h1.title {
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   border-bottom: 2px dashed #536E44;
 }
 .aboutNav nav a {
@@ -424,6 +452,7 @@ img.desktop {
   .adventure p {
     max-width: 35vw;
     padding: 8%;
+    font-size: 2.5rem;
   }
 }
 .virtual {
@@ -462,6 +491,7 @@ img.desktop {
   .virtual p {
     max-width: 35vw;
     padding: 8%;
+    font-size: 2.5rem;
   }
 }
 .local {
@@ -500,6 +530,7 @@ img.desktop {
   .local p {
     max-width: 35vw;
     padding: 8%;
+    font-size: 2.5rem;
   }
 }
 footer {
@@ -509,7 +540,7 @@ footer {
   border-top: 2px dashed #536E44;
 }
 footer nav {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
